@@ -12,3 +12,9 @@ class Blog(Model):
 
 Blog_Pydantic = pydantic_model_creator(Blog, name='Blog')
 BlogIn_Pydantic = pydantic_model_creator(Blog, name='Blog', exclude_readonly=True)
+
+
+#  class User(Model):
+#     id = fields.IntField(pk=True)
+#     username = fields.CharField(50, unique=True)
+#     password_hash = fields.CharField(128)
